@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dvinc.navigationcomponentplayground.fragments.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentA1"
+            app:destination="@id/fragmentA1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentA1"
+        android:name="com.dvinc.navigationcomponentplayground.fragments.a.FragmentA1"
+        android:label="FragmentA1"
+        tools:layout="@layout/fragment_a1">
+        <action
+            android:id="@+id/action_fragmentA1_to_fragmentA2"
+            app:destination="@id/fragmentA2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentA2"
+        android:name="com.dvinc.navigationcomponentplayground.fragments.a.FragmentA2"
+        android:label="FragmentA2"
+        tools:layout="@layout/fragment_a2">
+        <action
+            android:id="@+id/action_fragmentA2_to_fragmentA3"
+            app:destination="@id/fragmentA3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentA3"
+        android:name="com.dvinc.navigationcomponentplayground.fragments.a.FragmentA3"
+        android:label="FragmentA3"
+        tools:layout="@layout/fragment_a3" >
+        <action
+            android:id="@+id/action_fragmentA3_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
