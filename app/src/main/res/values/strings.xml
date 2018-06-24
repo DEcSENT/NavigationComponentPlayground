@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NavigationComponentPlayground</string>
+    <string name="fragment_a1_text">This is Fragment A-1!</string>
+    <string name="fragment_a2_text">This is Fragment A-2!</string>
+    <string name="fragment_a3_text">This is Fragment A-3!</string>
+    <string name="fragment_main_A_button_text">Go to simple chain</string>
+    <string name="fragment_a3_button_text">Go to main</string>
+    <string name="fragment_a2_button_text">Go to A3 fragment</string>
+    <string name="fragment_a1_button_text">Go to A2 fragment</string>
+</resources>
